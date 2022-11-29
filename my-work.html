@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src ="script.js"></script>
+    <title>Hannia's Portfolio</title>
+  </head>
+    <!-- Top Navigation Bar with About Me, Work, Resume, Form to Contact, and LinkediIn Link -->
+  <div aria-labeledby="top-navigation-bar" class="top-navigation-bar">
+        <a href="index.html">About Me</a>
+        <a href="my-work.html" aria-current="page">My Work</a>
+        <a href="my-resume.html">Resume</a>
+        <a href="contact-me.html">Contact Me</a>
+        <a aria-labelledby= "linkedin-link" href = "https://www.linkedin.com/in/hanniasantillan/" class = "linkedin-redirect"> LinkedIn </a>
+  </div>
+  <!-- Work Cards Wrapper -->
+  <div class = "wrap-work-cards">
+      <!-- Cards to Display information about the projects and images + ways to access and learn more -->
+    <div class="work-card" >
+      <div class = "work-card-elements">
+      <h1 class="title"> Wireframe Mock-Up </h1>
+      <h2 class="class"> Computer Science 330 </h2>
+      <img class = "mock-up-pic" alt = "image of home menu of theoretical book club app" src = "images/Screenshot 2022-11-27 at 4.16.56 PM.png">
+
+
+    <div class = "more-options-work-card">
+      <button id = "wireframe-project-button" aria-labelledby="launch-wireframe-project-button" onclick="launchProjectWireframe()"> Check Out My Project! </button>
+      
+      <button id = "more-information-button-w" aria-labelledby="click-to-learn-more-about-project-button" onclick="dropDown()">Learn More</button>
+      </div>
+    </div>
+    <!-- when read more is clicked, this div will be displayed -->
+    <div id="myDropdown" class="dropdown-content">
+      <p> A wireframe prototype to redesign a fictional online book club app. </p>
+      <p> This app allows users to maintain "bookshelves" of books that they want to read, are reading now, and that they've finished reading. </p>
+      <p> They are able to add and remove books from the shelves, or move them from one shelf to another.</p>
+      <p> Feedback was positive — the Teacher's Assistant remarked, "What's impressive is that you kept things minimal and clean, despite adding many nice features." </p>
+    </div>
+     <!-- Cards to Display information about the projects and images + ways to access and learn more -->
+    <div class="work-card" >
+      <div class = "work-card-elements">
+      <h1 class="title"> P5.js — Particle Swarm System </h1>
+      <h2 class="class"> Generative Methods </h2>
+      <img class = "swarm-pic" alt = "gif of swarm animations" src = "images/valerahannia-a4.gif">
+        <div class = "more-options-work-card">
+          <button id = "particle-project-button" aria-labelledby="launch-particle-project-button" onclick="launchProjectSwarm()"> Check Out My Project! </button>
+          
+          <button id = "more-information-button-p" aria-labelledby="click-to-learn-more-about-project-button" onclick="dropDown2()">Learn More</button>
+        </div>
+      </div>
+    </div>
+    <!-- when read more is clicked, this div will be displayed -->
+    <div id="myDropdown2" class="dropdown-content-2">
+      <p> Created four particle swarms with interesting emergent effects. </p>
+      <p> Granted user the ability to interact with the swarm through moving their mouse. </p>
+    </div>
+</div>
+</html>
