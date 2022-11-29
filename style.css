@@ -141,5 +141,4 @@ button {
 
 /* show the dropdown menu (using JavaScript to add this class to the .dropdown-content and .dropdown-content-2 
 container when the user clicks on the dropdown button) */
-
 .show {display:block;}
